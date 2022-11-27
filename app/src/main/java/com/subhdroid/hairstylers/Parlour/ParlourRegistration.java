@@ -1,8 +1,10 @@
 package com.subhdroid.hairstylers.Parlour;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -66,6 +68,34 @@ public class ParlourRegistration extends AppCompatActivity {
                         closeTime.setText(hourOfDay + ":" + minute1+" "+format);
                     }, hour, minute, false);
             timePickerDialog.show();
+        });
+
+
+        AppCompatButton selectImageBtn,uploadImageBtn;
+
+        selectImageBtn = findViewById(R.id.selectImageBtn);
+        uploadImageBtn = findViewById(R.id.uploadImageBtn);
+
+        uploadImageBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                selectImageBtn.setText("Image.jpg");
+            }
+        });
+
+
+
+
+
+        TextView signInTxt;
+        signInTxt = findViewById(R.id.signInTxt);
+
+        signInTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ParlourRegistration.this,ParlourLogin.class);
+                startActivity(intent);
+            }
         });
     }
 
