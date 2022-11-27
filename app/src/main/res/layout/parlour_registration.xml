@@ -65,7 +65,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -90,7 +90,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -115,7 +115,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
 
@@ -141,7 +141,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
                 </androidx.cardview.widget.CardView>
 
@@ -165,7 +165,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -190,7 +190,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -232,7 +232,7 @@
                         android:paddingVertical="8dp"
                         android:text="Opening Time"
                         android:textColor="@color/icon_color"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -255,7 +255,7 @@
                         android:paddingVertical="8dp"
                         android:text="Closing Time"
                         android:textColor="@color/icon_color"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -280,7 +280,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -306,7 +306,7 @@
                         android:paddingVertical="8dp"
                         android:textColor="@color/icon_color"
                         android:textColorHint="@color/muted_text"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </androidx.cardview.widget.CardView>
@@ -394,7 +394,7 @@
                         android:layout_height="match_parent"
                         android:text="Already have a account?"
                         android:textColor="@color/muted_text"
-                        android:textSize="18sp" />
+                        android:textSize="15sp" />
 
                     <TextView
                         android:id="@+id/signInTxt"
@@ -402,7 +402,7 @@
                         android:layout_height="wrap_content"
                         android:text="Sign in"
                         android:textColor="@color/purple_700"
-                        android:textSize="18sp"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
