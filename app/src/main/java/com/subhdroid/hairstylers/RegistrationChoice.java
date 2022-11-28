@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatButton;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
@@ -29,7 +30,11 @@ public class RegistrationChoice extends AppCompatActivity {
         ColorDrawable colorDrawable
                 = new ColorDrawable(getResources().getColor(R.color.icon_color));
         getSupportActionBar().setBackgroundDrawable(colorDrawable);
-        getWindow().setStatusBarColor(Color.TRANSPARENT);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar_color, this.getTheme()));
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.status_bar_color));
+        };
 
         AppCompatButton customerRegBtn,parlourRegBtn,workerRegBtn;
 

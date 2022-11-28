@@ -60,9 +60,10 @@
                         android:hint="Full Name"
                         android:textColorHint="@color/muted_text"
                         android:id="@+id/name"
+                        android:inputType="text"
                         android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textColor="@color/icon_color"
                         android:paddingVertical="11dp"
                         android:paddingHorizontal="11dp"
                         android:background="@drawable/edit_text_format"/>
@@ -84,9 +85,11 @@
                         android:hint="Phone"
                         android:textColorHint="@color/muted_text"
                         android:id="@+id/phone"
+                        android:inputType="phone"
+                        android:maxLength="10"
                         android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textColor="@color/icon_color"
                         android:paddingVertical="11dp"
                         android:paddingHorizontal="11dp"
                         android:background="@drawable/edit_text_format"/>
@@ -109,9 +112,10 @@
                         android:hint="Email"
                         android:textColorHint="@color/muted_text"
                         android:id="@+id/email"
+                        android:inputType="textEmailAddress"
                         android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textColor="@color/icon_color"
                         android:paddingVertical="11dp"
                         android:paddingHorizontal="11dp"
                         android:background="@drawable/edit_text_format"/>
@@ -132,9 +136,10 @@
                         android:hint="Password"
                         android:textColorHint="@color/muted_text"
                         android:id="@+id/password"
+                        android:inputType="textPassword"
                         android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textColor="@color/icon_color"
                         android:paddingVertical="11dp"
                         android:paddingHorizontal="11dp"
                         android:background="@drawable/edit_text_format" />
@@ -156,9 +161,36 @@
                         android:hint="Confirm Password"
                         android:textColorHint="@color/muted_text"
                         android:id="@+id/cpassword"
+                        android:inputType="textPassword"
                         android:textStyle="bold"
-                        android:textSize="18sp"
-                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textColor="@color/icon_color"
+                        android:paddingVertical="11dp"
+                        android:paddingHorizontal="11dp"
+                        android:background="@drawable/edit_text_format"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="21dp"
+                    app:cardElevation="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_baseline_my_location_24"
+                        android:drawablePadding="11dp"
+                        android:hint="Picode"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:textColorHint="@color/muted_text"
+                        android:id="@+id/pincode"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="@color/icon_color"
                         android:paddingVertical="11dp"
                         android:paddingHorizontal="11dp"
                         android:background="@drawable/edit_text_format"/>
@@ -181,7 +213,7 @@
                         android:paddingHorizontal="51dp"
                         android:paddingVertical="11dp"
                         android:textColor="#fff"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textStyle="bold"
                         android:background="@color/icon_color"/>
 
@@ -200,7 +232,7 @@
                         android:layout_height="match_parent"
                         android:text="Already have a account?"
                         android:textColor="@color/muted_text"
-                        android:textSize="18sp"/>
+                        android:textSize="15sp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -208,8 +240,8 @@
                         android:text="Sign in"
                         android:textStyle="bold"
                         android:textColor="@color/purple_700"
-                        android:textSize="18sp"
-                        android:id="@+id/signUpTxt"/>
+                        android:textSize="15sp"
+                        android:id="@+id/signInTxt"/>
 
                 </LinearLayout>
 

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "358023162019",
+    "project_id": "hair-stylers",
+    "storage_bucket": "hair-stylers.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358023162019:android:c6b9792b76a6d7663f3716",
+        "android_client_info": {
+          "package_name": "com.subhdroid.hairstylers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358023162019-636q36m7u4uj5757udhrepl1ccp5t9sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.subhdroid.hairstylers",
+            "certificate_hash": "7235d6d5f2d01d6bdb2bca5e255629b5cf76b4db"
+          }
+        },
+        {
+          "client_id": "358023162019-n47a6ds97bvgua9n48ic48l6mig61b61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcWLKh1UkXlo4bsStkr6HFtCP3jbm6O-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358023162019-n47a6ds97bvgua9n48ic48l6mig61b61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

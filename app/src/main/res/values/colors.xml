@@ -10,6 +10,7 @@
     <color name="start_page_background">#BCBCBC</color>
     <color name="start_page_title">#AC7C0F</color>
     <color name="icon_color">#251C3F</color>
+    <color name="status_bar_color">#281A4E</color>
     <color name="second_icon_color">#4C406E</color>
     <color name="muted_text">#B1ACAC</color>
     <color name="edit_text_background">#736598</color>
