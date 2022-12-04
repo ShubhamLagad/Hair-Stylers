@@ -326,7 +326,7 @@
                             app:cardElevation="5dp">
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/selectImageBtn"
+                                android:id="@+id/btnChoose"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:background="@drawable/edit_text_format"
@@ -335,11 +335,12 @@
                                 android:paddingHorizontal="11dp"
                                 android:paddingVertical="3dp"
                                 android:paddingRight="21dp"
-                                android:text="Select Image"
+                                android:text="Choose Image"
                                 android:textAllCaps="false"
                                 android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
+
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="wrap_content"
@@ -349,7 +350,7 @@
                             app:cardElevation="5dp">
 
                             <androidx.appcompat.widget.AppCompatButton
-                                android:id="@+id/uploadImageBtn"
+                                android:id="@+id/btnUpload"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:background="@color/icon_color"
@@ -359,8 +360,20 @@
                                 android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
-                    </LinearLayout>
 
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imgView"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#000"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/fimg"/>
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -408,6 +421,7 @@
                             android:textStyle="bold" />
 
                     </LinearLayout>
+
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
