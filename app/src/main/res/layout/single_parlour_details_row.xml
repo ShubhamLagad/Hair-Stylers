@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="11dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="11dp">
+
+                <ImageView
+                    android:id="@+id/rowSalonImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="11dp">
+
+                    <TextView
+                        android:id="@+id/rowSalonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hair Stylers"
+                        android:textColor="@color/icon_color"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rowSalonSubtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="A perfect mes ware"
+                        android:textColor="@color/muted_text"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rowSalonTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:text="Opens At 09:00 AM"
+                        android:textColor="@color/success"
+                        android:textSize="12sp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:id="@+id/rowSalonPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:drawableStart="@drawable/ic_baseline_call_24"
+                        android:drawablePadding="5dp"
+                        android:text="800787854"
+                        android:textColor="@color/icon_color"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="11dp"
+                    android:layout_weight="8"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/rowSalonOffer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="11dp"
+                        android:text="20% off on any service"
+                        android:textColor="@color/icon_color"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rowBookSlotBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="11dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/outline_button_format"
+                    android:paddingHorizontal="11dp"
+                    android:text="Book Slot Now"
+                    android:textColor="@color/icon_color"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

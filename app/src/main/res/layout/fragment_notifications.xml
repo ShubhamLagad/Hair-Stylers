@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    tools:context=".Parlour.ParlourMenuFragments.Notifications">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="349dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:text="Customer notification time "
+            android:textColor="@color/icon_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="11dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/todayNotifyTimeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.9"
+                    android:gravity="center"
+                    android:padding="11dp"
+                    android:text="12:00 PM"
+                    android:textColor="@color/icon_color"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="11dp"
+                    android:layout_weight="0.2"
+                    android:background="@color/icon_color" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/todayChangeTimeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4.9"
+                    android:background="@drawable/outline_button_format"
+                    android:paddingHorizontal="11dp"
+                    android:text="Change\nTime"
+                    android:textColor="@color/icon_color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="11dp"
+            android:layout_marginVertical="11dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/todayNotificationSwitchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="true"
+                android:padding="11dp"
+                android:text="Customers Notification"
+                android:textColor="@color/icon_color"
+                android:textOff="Off"
+                android:textOn="On"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:switchPadding="21dp" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/icon_color"
+            android:layout_marginVertical="11dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="11dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:text="Todays Customers"
+                android:textColor="@color/icon_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/todayNotifyAllBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:background="@drawable/outline_button_format"
+                android:paddingHorizontal="21dp"
+                android:text="Notify all"
+                android:textColor="@color/icon_color"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/todayCustomerLoadingAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/customer_card_animation"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/rowCustomerNotFoundTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No any customers found"
+            android:textStyle="italic"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:layout_marginTop="21dp"
+            android:textColor="@color/muted_text"
+            android:gravity="center"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerTodayCustomers"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.cardview.widget.CardView>

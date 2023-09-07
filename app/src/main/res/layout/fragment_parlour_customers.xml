@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Parlour.ParlourMenuFragments.ParlourCustomers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="11dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Search customer"
+                android:textColorHint="@color/muted_text"
+                android:textColor="@color/icon_color"
+                android:background="@drawable/edit_text_format"
+                android:drawableStart="@drawable/ic_baseline_search_24"
+                android:drawablePadding="11dp"
+                android:padding="11dp"/>
+        </androidx.cardview.widget.CardView>
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingAnimation"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/loading_animation"
+            android:layout_gravity="center"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:visibility="gone"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerParlourCustomers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|right|end"
+        android:layout_marginRight="-15dp"
+        android:layout_marginBottom="80dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addCustomerFab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/icon_color"
+            android:drawableStart="@drawable/ic_baseline_add_24"
+            android:paddingRight="21dp"
+            android:paddingLeft="5dp"
+            android:text="Add Customer"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

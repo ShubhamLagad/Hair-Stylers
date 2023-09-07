@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/parlourDashboardItem"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/parlourSlotsItem"
+        android:icon="@drawable/ic_timeslots_solid_svgrepo_com"
+        android:title="Slots" />
+
+    <item
+        android:id="@+id/parlourNotifications"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/parlourCustomerItem"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="Customers" />
+
+
+    <item
+        android:id="@+id/parlourQRCcode"
+        android:icon="@drawable/ic_baseline_qr_code_24"
+        android:title="QR code" />
+
+    <item
+        android:id="@+id/parlourServiceItem"
+        android:icon="@drawable/ic_customer_service_svgrepo_com"
+        android:title="Services" />
+
+    <item
+        android:id="@+id/workers"
+        android:icon="@drawable/ic_baseline_group_work_24"
+        android:title="Workers" />
+
+    <item
+        android:id="@+id/orders"
+        android:icon="@drawable/ic_orders_svgrepo_com"
+        android:title="Orders" />
+
+    <item
+        android:id="@+id/product"
+        android:icon="@drawable/ic_shopping_cart_with_product_inside_svgrepo_com"
+        android:title="Products" />
+
+    <item
+        android:id="@+id/parlourLogout"
+        android:icon="@drawable/ic_logout_svgrepo_com"
+        android:title="Logout" />
+</menu>

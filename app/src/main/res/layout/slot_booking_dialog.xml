@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="10">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:text="Book your slot"
+                android:textColor="@color/icon_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="11dp"
+                android:layout_marginLeft="60dp"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/bookSlotClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_baseline_close_24" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginVertical="11dp"
+            android:background="@color/icon_color" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingAnimation"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_animation" />
+
+
+        <LinearLayout
+            android:id="@+id/bookingDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose services : "
+                android:textColor="@color/icon_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/slotBookingServicesCheckboxRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginVertical="11dp"
+                android:background="@color/icon_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose slots : "
+                android:textColor="@color/icon_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/slotSuggestionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="11dp"
+                android:text="No any slot available please visit Parlour!"
+                android:textColor="@color/icon_color"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/slotRadioGroup"
+                    android:orientation="vertical"/>
+            </ScrollView>
+
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/slotBookingSlotsCheckboxRecyclerView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="150dp"-->
+<!--                    android:layout_gravity="center" />-->
+<!--            </RadioGroup>-->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dialogBookSlotBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="21dp"
+                android:background="@color/icon_color"
+                android:text="Book"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

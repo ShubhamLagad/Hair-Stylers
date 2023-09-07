@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="11dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Manage time slots"
+                android:textColor="@color/icon_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="11dp"
+                android:layout_marginLeft="60dp"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/addCustomerClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_baseline_close_24" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginVertical="11dp"
+            android:background="@color/icon_color" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/manageSlotOpenTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_format"
+                android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                android:drawablePadding="11dp"
+                android:hint="Parlour Opening Time"
+                android:padding="11dp"
+                android:textColor="@color/icon_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/manageSlotCloseTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_format"
+                android:drawableLeft="@drawable/ic_baseline_timer_off_24"
+                android:drawablePadding="11dp"
+                android:hint="Parlour Closing Time"
+                android:padding="11dp"
+                android:textColor="@color/icon_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="11dp"
+            app:cardElevation="10dp">
+
+            <EditText
+                android:id="@+id/manageOneSlotPeriod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_format"
+                android:hint="One slot period (in minute)"
+                android:inputType="number"
+                android:padding="11dp"
+                android:textColor="@color/icon_color" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="11dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/manageSlotTimeUpdateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/icon_color"
+                android:padding="11dp"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

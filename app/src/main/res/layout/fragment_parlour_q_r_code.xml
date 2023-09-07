@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="11dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    tools:context=".Parlour.ParlourMenuFragments.ParlourQRCode">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/allLoading"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_animation" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="11dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose done services : "
+                android:textColor="@color/icon_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginVertical="5dp"
+                android:background="@color/icon_color" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/checkboxRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/generateQRCodeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/icon_color"
+                    android:paddingHorizontal="11dp"
+                    android:text="Generate QR Code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_margin="11dp"
+                android:background="@color/icon_color" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="11dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/qrLoading"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:visibility="gone"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/loading_animation" />
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="11dp"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/qrParlourName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:textColor="@color/icon_color"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/qrDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/icon_color"
+                android:textStyle="bold|italic"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

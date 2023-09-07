@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.subhdroid.hairstylers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/hair_stylers_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/hair_stylers_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HairStylers"
+        tools:targetApi="31">
+        <activity
+            android:name=".Customer.CustomerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Worker.WorkerRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Worker.WorkerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Parlour.ParlourRegistration"
+            android:exported="true" />
+        <activity
+            android:name=".Parlour.ParlourLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Parlour.ParlourDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".Customer.CustomerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".LoginChoice"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationChoice"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".CloudMessage.FirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".CloudMessage.RecieverClass" />
+
+    </application>
+
+</manifest>

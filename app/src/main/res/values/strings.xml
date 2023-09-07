@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hair Stylers</string>
+    <integer name="main_heading">24</integer>
+    <integer name="form_edit_text">18</integer>
+    <integer name="subtext">24</integer>
+    <integer name="large_button_text">20</integer>
+    <string name="starting_title">The Hair Stylers</string>
+    <string name="openDrawer">Drawer open</string>
+    <string name="closeDrawer">Drawer close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
